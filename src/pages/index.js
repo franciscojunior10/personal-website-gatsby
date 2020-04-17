@@ -3,11 +3,14 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      description="full-stack developer, developing apps"
+      keywords="ReactJS, React Native, Node, Gatsby, Front-end, Back-end, API"
+    />
     <h1>Francisco Júnior</h1>
     <h2>Full Stack Developer</h2>
     <section>

@@ -10,7 +10,9 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+import ogImage from "../../assets/images/perfil.jpg"
+
+function SEO({ description, lang, meta, title, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +21,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -32,24 +35,16 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={title || site.siteMetadata.title}
+      titleTemplate={title && `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
+          name: `keywords`,
+          content: keywords,
         },
         {
           name: `twitter:card`,
@@ -67,6 +62,42 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+        },
+        {
+          property: `og:image:alt`,
+          content: metaDescription,
+        },
+        {
+          property: `og:image:type`,
+          content: `image/jpg`,
+        },
+        {
+          property: `og:image:width`,
+          content: `1944`,
+        },
+        {
+          property: `og:image:height`,
+          content: `2592`,
+        },
       ].concat(meta)}
     />
   )
@@ -76,6 +107,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  keywords: ``,
 }
 
 SEO.propTypes = {
@@ -83,6 +115,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  keywords: PropTypes.string,
 }
 
 export default SEO
