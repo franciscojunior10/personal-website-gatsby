@@ -52,8 +52,8 @@ const Projects = ({ data }) => (
         .
       </p>
 
-      <div className="columns">
-        <div className="column is-half is-offset-one-quarter">
+      <div className="columns is-centered">
+        <div className="column is-half">
           <Card
             title="Semana OmniStack 11.0"
             subtitle="Projeto resultado da Semana Omnistack #11"
