@@ -49,7 +49,7 @@ class Header extends Component {
                   to="/"
                   onClick={this.closeMenu}
                 >
-                  About
+                  Home
                 </Link>
                 <Link
                   className="navbar-item is-size-5"
@@ -60,10 +60,10 @@ class Header extends Component {
                 </Link>
                 <Link
                   className="navbar-item is-size-5"
-                  to="/stack"
+                  to="/skills"
                   onClick={this.closeMenu}
                 >
-                  Stack
+                  Skills
                 </Link>
               </div>
             </div>

@@ -49,7 +49,7 @@ const Projects = ({ data }) => (
         Projects
       </Title>
       <p className="has-text-centered">
-        {'Some of my projects, see more on my '}
+        {'Access my repositories at the '}
         <a href="https://github.com/franciscojunior10">Github</a>
         .
       </p>

@@ -53,19 +53,19 @@ const IndexPage = () => (
       <h1 className="title has-text-light">Francisco Júnior</h1>
       <h2 className="subtitle has-text-warning">Full Stack Developer</h2>
 
-      <a href="https://github.com/franciscojunior10" aria-label="github">
+      <a href="https://github.com/franciscojunior10" aria-label="github" target="_blank">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faGithub} />
         </span>
       </a>
 
-      <a href="https://www.linkedin.com/in/franciscojunior10/" aria-label="linkedin">
+      <a href="https://www.linkedin.com/in/franciscojunior10/" aria-label="linkedin" target="_blank">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faLinkedin} />
         </span>
       </a>
 
-      <a href="https://instagram.com/junniorcarvallho" aria-label="instagram">
+      <a href="https://instagram.com/junniorcarvallho" aria-label="instagram" target="_blank">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faInstagram} />
         </span>
@@ -78,16 +78,23 @@ const IndexPage = () => (
       <p>
         Graduating in Information Systems at
         the Federal University of Piauí - UFPI.
-        Interest in developing web, mobile and backend applications.
+        Developer ReactJS, Node.js e React Native.
+        I'm passionate about JavaScript and
+        the whole ecosystem of this technology
       </p>
       <p>
-        I develop my projects with JavaScript using
-        ReactJS, Node.js and React Native.
+        I like to work in a team and I am a very communicative
+        guy, who devours new technologies
+        and likes to play with JavaScript framework.
       </p>
       <p>
         Check out my
         {' '}
         <Link to="/projects">projects</Link>
+        {' '}
+        or
+        {' '}
+        <Link to="/skills">skills</Link>
         .
       </p>
     </section>
