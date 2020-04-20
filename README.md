@@ -2,10 +2,10 @@
 
 ##### Resultado final da aplicação :heavy_check_mark:
 
-# Technologies :memo:
+# Technologies :memo::
 - [Gatsby](https://www.gatsbyjs.org/)
 
-# Layout :bookmark:
+# Layout :bookmark::
 ![mysite](https://user-images.githubusercontent.com/33940202/79797123-18bc9300-832d-11ea-9e80-4482d6d7131f.gif)
 
 ![mysite](https://user-images.githubusercontent.com/33940202/79797219-41dd2380-832d-11ea-89bd-4b5fbc3ff096.png)
