@@ -10,7 +10,7 @@ const Card = ({
   tags,
   image,
 }) => (
-  <a href={link}>
+  <a href={link} target="_blank">
     <div className="card">
       <div className="card-content">
         <div className="media">

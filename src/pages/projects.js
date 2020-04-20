@@ -33,6 +33,20 @@ query {
       }
     }
   }
+  codenation: file(relativePath: { eq: "code.png" }) {
+    childImageSharp {
+      fixed(width: 96, height: 96) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+  api: file(relativePath: { eq: "api.png" }) {
+    childImageSharp {
+      fixed(width: 96, height: 96) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
 }
 `;
 
@@ -56,25 +70,66 @@ const Projects = ({ data }) => (
 
       <div className="columns is-centered">
         <div className="column is-half">
+
           <Card
-            title="Semana OmniStack 11.0"
-            subtitle="Projeto resultado da Semana Omnistack #11"
+            title="Api Training"
+            subtitle="Practicing Api Rest"
+            link="https://github.com/franciscojunior10/api-training"
+            tags={['nodejs', 'api-rest']}
+            image={<Img fixed={data.api.childImageSharp.fixed} alt="Semana OmniStack 10.0" />}
+          />
+
+          <Card
+            title="Site estático: IMDB"
+            subtitle="Challenge 01 codenation"
+            link="https://github.com/franciscojunior10/challenge-imdb"
+            tags={['html5', 'css', 'codenation']}
+            image={<Img fixed={data.codenation.childImageSharp.fixed} alt="Semana OmniStack 9.0" />}
+          />
+
+          <Card
+            title="Mobile First: Instagram"
+            subtitle="Challenge 02 codenation"
+            link="https://github.com/franciscojunior10/challenge-instagram-mobile-first"
+            tags={['html5', 'css', 'codenation']}
+            image={<Img fixed={data.codenation.childImageSharp.fixed} alt="Semana OmniStack 9.0" />}
+          />
+
+          <Card
+            title="Blog Aula"
+            subtitle="Example of Blog created in module 1 of AceleraDev React promoted by Codenation"
+            link="https://github.com/franciscojunior10/blog-aula"
+            tags={['html5', 'css', 'codenation']}
+            image={<Img fixed={data.codenation.childImageSharp.fixed} alt="Semana OmniStack 9.0" />}
+          />
+
+          <Card
+            title="Bem Css Aula"
+            subtitle=" Example of Bem Css built in module 2 of AcelaraDev React promoted by Codenation"
+            link="https://github.com/franciscojunior10/bem-css-aula"
+            tags={['html5', 'css', 'codenation']}
+            image={<Img fixed={data.codenation.childImageSharp.fixed} alt="Semana OmniStack 9.0" />}
+          />
+
+          <Card
+            title="Week OmniStack 11.0"
+            subtitle="Project result of the Week Omnistack #11"
             link="https://github.com/franciscojunior10/semana-omnistack-11.0"
             tags={['nodejs', 'reactjs', 'reactjs', 'react-native', 'expo']}
             image={<Img fixed={data.project1.childImageSharp.fixed} alt="Semana OmniStack 11.0" />}
           />
 
           <Card
-            title="Semana OmniStack 10.0"
-            subtitle="Projeto resultado da Semana Omnistack #10"
+            title="Week OmniStack 10.0"
+            subtitle="Project result of the Week Omnistack #10"
             link="https://github.com/franciscojunior10/semana-omnistack-10.0"
             tags={['nodejs', 'reactjs', 'reactjs', 'react-native', 'expo']}
             image={<Img fixed={data.project2.childImageSharp.fixed} alt="Semana OmniStack 10.0" />}
           />
 
           <Card
-            title="Semana OmniStack 9.0"
-            subtitle="Projeto resultado da Semana Omnistack #9"
+            title="Week OmniStack 9.0"
+            subtitle="Project result of the Week Omnistack #9"
             link="https://github.com/franciscojunior10/semana-omnistack-9.0"
             tags={['nodejs', 'reactjs', 'reactjs', 'react-native', 'expo']}
             image={<Img fixed={data.project3.childImageSharp.fixed} alt="Semana OmniStack 9.0" />}
