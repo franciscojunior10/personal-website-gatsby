@@ -50,8 +50,8 @@ const IndexPage = () => (
 
     <div className="has-text-centered">
 
-      <h1 className="title">Francisco Júnior</h1>
-      <h2 className="subtitle">Full Stack Developer</h2>
+      <h1 className="title has-text-light">Francisco Júnior</h1>
+      <h2 className="subtitle has-text-warning">Full Stack Developer</h2>
 
       <a href="https://github.com/franciscojunior10" aria-label="github">
         <span className="icon is-large fa-2x">
@@ -74,7 +74,7 @@ const IndexPage = () => (
     </div>
 
     <section className="section content is-size-4-desktop is-size-5-touch">
-      <h4 className="title">Hello, I am Francisco das Chagas dos Anjos Carvalho Júnior</h4>
+      <h4 className="title has-text-light">Hello, I am Francisco das Chagas dos Anjos Carvalho Júnior</h4>
       <p>
         Graduating in Information Systems at
         the Federal University of Piauí - UFPI.
