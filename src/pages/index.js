@@ -78,7 +78,7 @@ const IndexPage = () => (
       <p>
         Graduating in Information Systems at
         the Federal University of Piauí - UFPI.
-        Developer ReactJS, Node.js e React Native.
+        Developer ReactJS, Node.js and React Native.
         I'm passionate about JavaScript and
         the whole ecosystem of this technology
       </p>
