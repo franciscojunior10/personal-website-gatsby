@@ -64,13 +64,6 @@ const IndexPage = () => (
           <FontAwesomeIcon icon={faLinkedin} />
         </span>
       </a>
-
-      <a href="https://instagram.com/junniorcarvallho" aria-label="instagram" target="_blank">
-        <span className="icon is-large fa-2x">
-          <FontAwesomeIcon icon={faInstagram} />
-        </span>
-      </a>
-
     </div>
 
     <section className="section content is-size-4-desktop is-size-5-touch">
