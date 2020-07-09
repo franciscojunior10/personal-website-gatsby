@@ -61,7 +61,7 @@ Technologies that I used to develop this WebSite
 - [Prettier](https://prettier.io/)
 
 
-## Getting started 🖥:
+## Getting started :desktop_computer::
 **Clone the project and access the folder**
 
 ```bash
